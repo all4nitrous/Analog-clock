@@ -18,8 +18,22 @@
         <div id="sec"></div>
         </div>
           </div>
-  <script></script>
+  <script>
           
+          const deg = 6;
+          const hr = document.querySelector('#hr');
+          const mn = document.querySelector('#min');
+          const sc = document.querySelector('#sec');
+          setInterval(()=>{
+          let day = new Date();
+          let hh = day.getHours() * 30;
+          let mm = day.getMinutes() * deg;
+          let ss = day.getSeconds() * deg;
+          hr.style.transform = `rotatez(${hr+(mm/12)}deg)`;
+          mn.style.transform = `rotatez(${mn}deg)`;
+          sc.style.transform = `rotatez(${sc}deg)`;
+          })
+          </script>
           
 </body>
 </html>
