@@ -31,7 +31,7 @@
     border-radius: 50%;
   }
   
-  .inner-cir {
+  .inner_cir {
 width: 200px;
 height: 200px;
 background: black url(https://miro.medium.com/max/800/1*F1irs2oWARQq1Oc9kCI4OA.png);
@@ -41,3 +41,11 @@ display: flex;
 align-items:  center;
 justify-content: center;
   }
+#center {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(to right,#fa6a52, #e71c50);
+  border-radius: 50%;
+  position: absolute;
+  
+}
