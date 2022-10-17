@@ -47,5 +47,79 @@ justify-content: center;
   background: linear-gradient(to right,#fa6a52, #e71c50);
   border-radius: 50%;
   position: absolute;
-  
+  z-index: 1000;
 }
+
+#hr {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#min {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#sec {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+}
+
+#hr::before {
+  content: "";
+  width: 8px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  top: -8px;
+  border-radius: 10px;
+}
+
+#min::before {
+  content: "";
+  width: 5px;
+  height: 70px;
+  background-color: white;
+  position: absolute;
+  top: -25px;
+  border-radius: 10px;
+}
+
+#sec::before {
+  content: "";
+  width: 2px;
+  height: 100px;
+  background-color:#e71c50 ;
+  position: absolute;
+  top: -25px;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

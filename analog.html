@@ -6,14 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analog Clock</title>
     <link href="style.css" rel="stylesheet">
+    <link href="script.js" rel=""
 </head>
 <body>
     <div class="rect">
         <div class="cir">
         <div class="inner_cir"></div>
         <div id="center"></div>
+        <div id="hr"></div>
+        <div id="min"></div>
+        <div id="sec"></div>
         </div>
           </div>
-          <script src="script.js"></script>
+  <script="text/Javascript">
+          const deg = 6;
+          const hr = document.querySelector('#hr');
+          const mn = document.querySelector('#min');
+          const sc = document.querySelector('#sec');
+          setInterval(() => {
+          let day = new Date();
+          let hh = day.getHours() * 30;
+          let mm = day.getMinutes() * deg;
+          let ss = day.getSeconds() * deg;
+          hr.style.transform = `rotateZ(${hour+(mm/12)}deg)`;
+          mn.style.transform = `rotateZ(${minute}deg)`;
+          sc.style.transform = `rotateZ(${second}deg)`;
+          })
+          </script>
+          
 </body>
 </html>
