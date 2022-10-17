@@ -18,20 +18,21 @@
         <div id="sec"></div>
         </div>
           </div>
-  <script="text/Javascript">
-          const deg = 6;
-          const hr = document.querySelector('#hr');
-          const mn = document.querySelector('#min');
-          const sc = document.querySelector('#sec');
-          setInterval(() => {
-          let day = new Date();
-          let hh = day.getHours() * 30;
-          let mm = day.getMinutes() * deg;
-          let ss = day.getSeconds() * deg;
-          hr.style.transform = `rotateZ(${hour+(mm/12)}deg)`;
-          mn.style.transform = `rotateZ(${minute}deg)`;
-          sc.style.transform = `rotateZ(${second}deg)`;
-          })
+  <script>
+          setInterval(()=>{
+    var day=new Date();
+    var hh=day.getHours();
+    var mm=day.getMinutes();
+    var ss=day.getSeconds();
+    const hour=30*hh+mm/2;
+    const minute=6*mm;
+    const second=6*ss;
+    
+    hr.style.transform='rotatez($({hour}deg)'
+    min.style.transform='rotatez($({minute}deg)'
+    sec.style.transform='rotatez($({second}deg)'
+    
+    })
           </script>
           
 </body>
