@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Analog Clock</title>
-    <link href="style.css" rel="stylesheet
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div class="rect">
@@ -18,19 +18,18 @@
         </div>
           </div>
   <script>
-          
-          const deg = 6;
-          const hr = document.querySelector('#hr');
-          const mn = document.querySelector('#min');
-          const sc = document.querySelector('#sec');
           setInterval(()=>{
-          let day = new Date();
-          let hh = day.getHours() * 30;
-          let mm = day.getMinutes() * deg;
-          let ss = day.getSeconds() * deg;
-          hr.style.transform = `rotatez(${hr+(mm/12)}deg)`;
-          mn.style.transform = `rotatez(${mn}deg)`;
-          sc.style.transform = `rotatez(${sc}deg)`;
+          var day= new Date();
+          var hh= day.getHours();
+          var mm= day.getMinutes();
+          var ss= day.getSeconds();
+          const hour=30*hh+mm/2;
+          const minute=6*mm;
+          const second=6*ss;
+          
+          hr.style.transform = `rotatez(${hour}deg)`
+          min.style.transform = `rotatez(${minute}deg)`
+          sec.style.transform = `rotatez(${second}deg)`
           })
           </script>
           
